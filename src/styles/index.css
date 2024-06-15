@@ -1,12 +1,42 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.back {
+  background-color: black;
+  width: 17rem;
+  height: auto;
+  border-radius: 20px;
+}
+.red {
+ width: 10rem;
+ height: 10rem;
+ margin: 2rem auto;
+ border-radius: 50%;
+}
+.green {
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+}
+.yellow {
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+}
+.glow-red {
+    box-shadow: 0px 0px 9px 4px red;
+    animation: glow 0.8s linear infinite alternate;
+  }
+.glow-yellow {
+    box-shadow: 0px 0px 9px 4px yellow;
+    animation: glow 0.8s linear infinite alternate;
+  }
+.glow-green {
+    box-shadow: 0px 0px 9px 4px green;
+    animation: glow 0.8s linear infinite alternate;
+  }
+  
+  @keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px yellowgreen;
+    }
+  }
